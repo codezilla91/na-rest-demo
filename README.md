@@ -1,61 +1,27 @@
-# rest Project
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+Download java >= 11
+https://adoptium.net
 
-## Running the application in dev mode
+Run project in command line with:
+`.\gradlew.bat quarkusDev`
 
-You can run your application in dev mode that enables live coding using:
-```shell script
-./gradlew quarkusDev
-```
+https://www.postman.com
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
 
-## Packaging and running the application
+## Person Service  `https://github.com/mudcrab/na-rest-demo`
+GET <securityServer>/restapi
+GET <securityServer>/restapi/1234
+POST <securityServer>/restapi
+DELETE <securityServer>/restapi/{id} -- change ID to an existing one
 
-The application can be packaged using:
-```shell script
-./gradlew build
-```
-It produces the `quarkus-run.jar` file in the `build/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `build/quarkus-app/lib/` directory.
+uxp-client `NA-TRAINING/GOV/Ankur/ankur_server`
+uxp-service `NA-TRAINING/GOV/Ankur/ankur_server/personTest/v1`
 
-The application is now runnable using `java -jar build/quarkus-app/quarkus-run.jar`.
+## Todos Service
+<securityServer>/restapi
+<securityServer>/restapi/1
 
-If you want to build an _über-jar_, execute the following command:
-```shell script
-./gradlew build -Dquarkus.package.type=uber-jar
-```
+uxp-client `NA-TRAINING/GOV/Ankur/ankur_server`
+uxp-service `NA-TRAINING/GOV/Ankur/ankur_server/todos/v1`
 
-The application, packaged as an _über-jar_, is now runnable using `java -jar build/*-runner.jar`.
-
-## Creating a native executable
-
-You can create a native executable using: 
-```shell script
-./gradlew build -Dquarkus.package.type=native
-```
-
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using: 
-```shell script
-./gradlew build -Dquarkus.package.type=native -Dquarkus.native.container-build=true
-```
-
-You can then execute your native executable with: `./build/rest-1.0.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/gradle-tooling.
-
-## Related Guides
-
-- RESTEasy JSON-B ([guide](https://quarkus.io/guides/rest-json)): JSON-B serialization support for RESTEasy
-- RESTEasy JAX-RS ([guide](https://quarkus.io/guides/rest-json)): REST endpoint framework implementing JAX-RS and more
-
-## Provided Code
-
-### RESTEasy JAX-RS
-
-Easily start your RESTful Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
